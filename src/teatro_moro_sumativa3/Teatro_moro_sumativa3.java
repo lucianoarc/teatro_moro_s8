@@ -142,15 +142,23 @@ public static void modificarboleto() {
             Entradas boleto = Listaboletos.get(numeroBoleto - 1);
 
             System.out.println("Ingrese la nueva ubicacion del asiento:");
+            System.out.println("vip / platea alta / palcos");
+            System.out.println("");
             String nuevaUbicacion = teclado.nextLine();
             boleto.setUbicacion(nuevaUbicacion);
 
             System.out.println("Ingrese el nuevo precio base:");
+            System.out.println("vip:25000 / platea alta:11000 / palcos:7200");
+            System.out.println("");
             int nuevoPrecioBase = teclado.nextInt();
             teclado.nextLine();
             boleto.setPreciobase(nuevoPrecioBase);
 
             System.out.println("Ingrese el nuevo descuento:");
+            System.out.println("estudiante: 10 (edad:5-17)");
+            System.out.println("general: 0 (edad:18-60)");
+            System.out.println("tercera edad: 15 (edad:61-100)");
+            System.out.println("");
             double nuevoDescuento = teclado.nextDouble();
             teclado.nextLine();
             boleto.setDescuento(nuevoDescuento);
